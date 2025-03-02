@@ -17,7 +17,7 @@ const CryptoList: React.FC<CryptoListProps> = ({ data, loading }) => {
   }
 
   return data.length > 0 ? (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
       {data.map((crypto) => (
         <CryptoCard key={crypto.id} crypto={crypto} />
       ))}

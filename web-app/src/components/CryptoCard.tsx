@@ -7,7 +7,7 @@ interface CryptoCardProps {
 
 const CryptoCard: React.FC<CryptoCardProps> = ({ crypto }) => {
   return (
-    <div className="p-4 border rounded-lg shadow-lg bg-white dark:bg-gray-900 dark:text-white">
+    <div className="p-6 border rounded-2xl shadow-lg bg-white dark:bg-gray-900 dark:text-white">
       <h2 className="text-lg font-bold">
         {crypto.name} ({crypto.symbol})
       </h2>
