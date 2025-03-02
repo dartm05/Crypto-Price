@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { FaSync } from "react-icons/fa";
 import { useFetchCrypto } from "../hooks/useFetchCrypto";
 import { useSearch } from "../hooks/useSearch";
 import CryptoList from "../components/CryptoList";
@@ -44,14 +45,12 @@ const Home = () => {
       <div className="flex items-center mb-6">
         <SearchBar onSearch={setQuery} />
       </div>
-      < div className="flex justify-center items-center">
-      <button
-          onClick={fetchData}
-          className="p-2 mb-6 bg-primary text-white rounded-lg hover:bg-purple-600"
-        >
-          Refresh
+      <section className="mb-6 flex justify-end">
+        <button onClick={fetchData} className="flex items-center bg-primary text-white px-4 py-2 rounded-full">
+          <FaSync className="mr-2" />
+          Refresh Data
         </button>
-      </div>
+      </section>
       <CryptoList data={filteredData} loading={loading} />
       <footer className="text-center text-gray-500 dark:text-gray-400 mt-8">
         <p>&copy; 2025 Crypto Dashboard. All rights reserved.</p>
