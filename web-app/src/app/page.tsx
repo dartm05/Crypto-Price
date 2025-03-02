@@ -43,9 +43,11 @@ const Home = () => {
       </section>
       <div className="flex items-center mb-6">
         <SearchBar onSearch={setQuery} />
-        <button
+      </div>
+      < div className="flex justify-center items-center">
+      <button
           onClick={fetchData}
-          className="p-2 bg-primary text-white rounded-lg hover:bg-purple-600"
+          className="p-2 mb-6 bg-primary text-white rounded-lg hover:bg-purple-600"
         >
           Refresh
         </button>
