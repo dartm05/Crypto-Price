@@ -28,12 +28,6 @@ const Home = () => {
           <img src="/assets/bitcoin.png" alt="Logo" className="w-8 h-8 mr-2" />
           <h1 className="text-2xl font-bold">Crypto Dashboard</h1>
         </div>
-        <div className="ml-auto flex items-center">
-          <a href="https://your-docusaurus-site.com" target="_blank" rel="noopener noreferrer" className="mr-4 text-gray-500 hover:underline">
-            Docs
-          </a>
-          <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-        </div>
       </header>
       <section className="mb-6 text-center">
         <img src="/assets/currency.svg" width={200} height={200} alt="Crypto Dashboard" className="mx-auto" />
